@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Haz tu pedido de tortas caseras y postres saludables con Candy Kao. Descubre cómo puedes personalizar tu pedido y disfrutar de dulces deliciosos en tu próxima celebración." />
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Pedidos - Candy Kao</title>
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/pedidos.css" />
+</head>
+
+<body id="Container-Body">
+  <!-- Header con la barra de navegación -->
+  <header id="Container-Header">
+    <div class="logo-titulo">
+      <img src="../image/logo-candy-kao.png" alt="logo-candy-kao" class="logo" />
+      <h1 class="title">Candy Kao</h1>
+    </div>
+    <nav class="navegador">
+      <ul class="lista">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+        <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="Container-Main">
+    <form class="pedido-form">
+      <fieldset>
+        <legend class="section-title">
+          Ingrese los datos para su pedido
+        </legend>
+        <label for="nombre-apellidos">Nombre y apellido:</label>
+        <input type="text" id="nombre-apellidos" name="nombre-apellido" placeholder="Ej. Juan Pérez" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Ej. ejemplo@correo.com" />
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej. (123) 456-7890" />
+        <h2 class="section-title">Su pedido</h2>
+        <div class="torta-options">
+          <div>
+            <input type="radio" id="torta1" name="torta" value="1" />
+            <label for="torta1">Torta de chocolate: Chocolate oscuro, relleno de crema de
+              avellanas, cubierta con ganache de chocolate y fresas
+              frescas.</label>
+          </div>
+          <div>
+            <input type="radio" id="torta2" name="torta" value="2" />
+            <label for="torta2">Torta de vainilla: Bizcocho de vainilla, relleno de crema de
+              vainilla, decorado con flores de fondant y frutas
+              tropicales.</label>
+          </div>
+          <div>
+            <input type="radio" id="torta3" name="torta" value="3" />
+            <label for="torta3">Torta de zanahoria: Bizcocho de zanahoria, relleno de crema de
+              queso, cubierto con nueces caramelizadas y ralladura de
+              naranja.</label>
+          </div>
+          <div>
+            <input type="radio" id="torta4" name="torta" value="4" />
+            <label for="torta4">Torta de frutos rojos: Bizcocho de almendras, relleno de
+              mermelada de frutos rojos, cubierto con chantilly y frutos del
+              bosque frescos.</label>
+          </div>
+        </div>
+        <div class="select-container">
+          <label for="select">Seleccionar número de personas:</label>
+          <select id="select" name="select">
+            <option value="6-8">6-8 porciones</option>
+            <option value="8-10">8-10 porciones</option>
+            <option value="10-12">10-12 porciones</option>
+          </select>
+        </div>
+        <h2 class="section-title">Datos de entrega</h2>
+        <div class="date-time-inputs">
+          <div class="date-input">
+            <label for="fecha-entrega">Fecha de entrega:</label>
+            <input type="date" id="fecha-entrega" name="fecha-entrega" />
+          </div>
+          <div class="time-input">
+            <label for="hora-entrega">Hora:</label>
+            <input type="time" id="hora-entrega" name="hora-entrega" />
+          </div>
+        </div>
+        <div class="address-input">
+          <label for="direccion-entrega">Dirección de entrega:</label>
+          <input type="text" id="direccion-entrega" name="direccion-entrega" placeholder="Ej. Calle 123, Ciudad" />
+        </div>
+        <label for="comentarios">Comentarios adicionales:</label>
+        <textarea id="comentarios" name="comentarios"
+          placeholder="Ej. Sin azúcar, decoración especial, sin gluten, etc."></textarea>
+        <button type="submit" class="btn-submit">Enviar</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer id="Container-Footer">
+    <!-- Redes sociales -->
+    <div class="redes-sociales">
+      <h3>Seguinos en nuestras redes</h3>
+      <div>
+        <!-- Enlaces a las redes sociales -->
+        <a href="https://www.instagram.com/candykao8" target="_blank" rel="noopener"><img
+            src="../image/image icons/instagram.png" alt="Instagram"></a>
+        <a href="mailto:candykao.arg@gmail.com" target="_blank" rel="noopener"><img src="../image/image icons/gmail.png"
+            alt="Gmail"></a>
+      </div>
+    </div>
+    <!-- Texto de derechos de autor -->
+    <div class="title-footer">
+      <h6>© 2024 Derechos de autor. Todos los derechos reservados.</h6>
+    </div>
+  </footer>
+
+</body>
+
+</html>

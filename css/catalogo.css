@@ -1,0 +1,159 @@
+.catalogo {
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffb9e155;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 4px rgba(202, 122, 252, 0.5);
+}
+h2{
+    text-align: center;
+    margin: 5%;
+    font-size: 2rem;
+    color: #540070;
+}
+
+.catalogo h3 {
+    text-align: center;
+}
+
+.catalogo a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.catalog-content {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+.description {
+    padding: 20px;
+    text-align: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+.grid-item {
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 192, 203, 0.468);
+    backdrop-filter: blur(2px);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #540070;
+}
+
+.overlay h4, .overlay p {
+    margin: 5px 0; 
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+/* Estilos para el footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #540070;
+    color: #ffb9e1;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  .footer .redes-sociales {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .footer .redes-sociales h3 {
+    margin-right: 20px;
+  }
+  
+  .footer .redes-sociales img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+
+/* Media queries para tablets */
+@media (max-width: 768px) {
+    .catalog-content {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .grid-item {
+        margin: 0 auto; 
+    }
+
+}
+
+/* Media queries para teléfonos */
+@media (max-width: 480px) {
+    .catalog-content {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item {
+       margin: 0 auto; 
+    }
+}

@@ -1,0 +1,73 @@
+/* Estilos para la página "Sobre Nosotros" */
+/* ========================================================================== */
+
+.sobreNosotros-container{
+    display: flex;
+    width: auto;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.sobreNosotros-section {   
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: #ff9cdc2d;
+    padding: 20px;
+    margin: 5%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sobreNosotros-section h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-style: oblique;
+    margin-bottom: 10px;
+    color: #ff69b4; /* Color rosa para los títulos */
+  }
+  
+  .sobreNosotros-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+  
+  #sobreNosotros-aside {
+    width: 80%;
+    margin: 5%;
+    background-color: #ff9cdc2d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #sobreNosotros-aside h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-style: oblique;
+    margin-bottom: 10px;
+    color: #ff69b4; /* Color rosa para el título del aside */
+  }
+  
+  #sobreNosotros-aside p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+
+  /* ========================================================================== */
+/* Estilos responsivos */
+/* ========================================================================== */
+@media screen and (max-width: 768px) {
+  .sobreNosotros-container {
+    padding: 0 10px;
+}
+
+.sobreNosotros-section, #sobreNosotros-aside {
+    width: 95%;
+    margin: 5% 0;
+}
+}

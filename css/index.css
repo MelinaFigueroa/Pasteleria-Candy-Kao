@@ -1,0 +1,320 @@
+/* Estilos generales */
+/* ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Estilos para el body */
+/* ========================================================================== */
+#Container-Body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  /* Fuente Roboto cargada desde Google Fonts */
+  background-color: #ffb9e155;
+  color: #540070;
+  text-shadow: 2px 2px 4px rgba(202, 122, 252, 0.5);
+}
+
+/* Estilos para el header */
+/* ========================================================================== */
+#Container-Header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("/image/background-cereza.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Estilos para el la imagen del logo */
+/* ========================================================================== */
+.logo-titulo {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 2vw;
+}
+
+/* Estilos para el titulo */
+/* ========================================================================== */
+.title {
+  font-weight: 900;
+  align-self: center;
+  font-size: 3rem;
+  color: #540070;
+  border-color: rgb(116, 115, 116);
+  text-shadow: 2px 2px 4px rgba(122, 150, 252, 0.5);
+}
+
+.logo {
+  width: 10vw;
+  padding: 0;
+  margin: 1%;
+}
+
+/* Estilos para la barra de navegación */
+/* ========================================================================== */
+.navegador {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  font-weight: 800;
+}
+
+/* Ajustes para hacerlo responsive */
+/* ========================================================================== */
+.navegador .lista {
+  display: flex;
+  width: auto;
+  list-style-type: none;
+  box-shadow: 2px 2px 4px rgba(252, 122, 217, 0.684);
+}
+
+.navegador .lista li {
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.navegador .lista li:hover {
+  transform: scale(1.1);
+}
+
+.navegador .lista li a {
+  color: #880066;
+  text-shadow: 4px 4px 5px #9b60a7;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* Cambio de color al hacer hover */
+.navegador .lista li a:hover {
+  color: #8200aa;
+}
+
+/* ========================================================================== */
+/* Estilos para el contenido principal */
+/* ========================================================================== */
+.Container-Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  margin: 2%;
+}
+
+/* Estilos para los títulos de sección */
+/* ========================================================================== */
+.title-section {
+  margin: 30px 0;
+  /* Añade margen arriba y abajo para separar los títulos */
+}
+
+.Container-Main .div-welcome {
+  width: auto;
+  font-weight: 900;
+  padding: 2%;
+}
+
+.Container-Main .welcome-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3%;
+  font-weight: 900;
+}
+
+.Container-Main .welcome-subtitle {
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: oblique;
+  margin-bottom: 4%;
+}
+
+/* ========================================================================== */
+/* Estilos para los productos destacados */
+/* ========================================================================== */
+
+.productos-destacados {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  gap: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  /* Establece un ancho máximo para la tarjeta */
+}
+
+.product-card img {
+  max-width: 100%;
+  /* Establece un ancho máximo para la imagen */
+  height: auto;
+  /* Permite que la altura se ajuste automáticamente */
+  margin-bottom: 10px;
+  /* Espaciado inferior para separar la imagen del texto */
+  border-radius: 15px;
+}
+
+.product-card h3 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-bottom: 4%;
+}
+
+.product-card p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+/* ========================================================================== */
+/* Estilos para eventos y promociones */
+/* ========================================================================== */
+
+.eventos-promociones {
+  width: auto;
+  display: flex;
+  align-self: center;
+  gap: 20px;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  /* Establece un ancho máximo para la tarjeta */
+  align-self: center;
+}
+
+.event-card img {
+  max-width: 100%;
+  /* Establece un ancho máximo para la imagen */
+  height: auto;
+  /* Permite que la altura se ajuste automáticamente */
+  margin-bottom: 10px;
+  /* Espaciado inferior para separar la imagen del texto */
+  border-radius: 10px;
+}
+
+.event-card h3 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-bottom: 4%;
+}
+
+.event-card p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+/* Estilos para el pie de página */
+/* ========================================================================== */
+#Container-Footer {
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #540070;
+  color: #ffb9e1;
+  padding: 20px;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.redes-sociales img {
+  width: 4vh;
+  margin-top: 5%;
+  margin-right: 5px;
+}
+
+.title-footer {
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* ========================================================================== */
+/* Estilos responsivos */
+/* ========================================================================== */
+@media screen and (max-width: 768px) {
+  .logo-titulo {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .logo {
+    width: 16vh;
+    padding: 0;
+    margin: 1%;
+  }
+
+  .title {
+    align-self: center;
+    font-size: 3rem;
+    margin: 2vw 0;
+  }
+
+  .section-welcome {
+    width: auto;
+  }
+
+  .productos-destacados {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .eventos-promociones {
+    flex-direction: column;
+  }
+
+  .navegador .lista li {
+    margin-right: 10px;
+  }
+
+  .navegador .lista li a {
+    font-size: 1rem;
+  }
+
+  #Container-Footer {
+    padding: 10px;
+    /* Ajusta el padding para espaciar los elementos en pantallas más pequeñas */
+  }
+
+  .redes-sociales h3 {
+    font-size: 1.1rem;
+  }
+
+  .redes-sociales img {
+    width: 3vh;
+    margin-top: 1vh;
+  }
+
+  .redes-sociales {
+    align-self: center;
+    margin: 10px;
+    /* Agrega un espacio superior en pantallas más pequeñas */
+  }
+
+  .title-footer {
+    font-size: 1rem;/* Reduce el tamaño del texto del footer en pantallas más pequeñas */
+    margin-bottom: 1vh;
+  }
+}

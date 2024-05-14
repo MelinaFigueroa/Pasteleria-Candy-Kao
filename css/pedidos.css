@@ -1,0 +1,116 @@
+/* CSS para hacer el formulario responsive y flexible */
+
+
+.pedido-form {
+    width: auto;
+    margin: 5%;
+    padding: 5%;
+    background-color: #ffadf32f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+.pedido-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.pedido-form input[type="text"],
+.pedido-form input[type="email"],
+.pedido-form input[type="tel"],
+.pedido-form select,
+.pedido-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.pedido-form .torta-options {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.pedido-form .torta-options div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pedido-form .torta-options input[type="radio"] {
+    margin-right: 10px;
+}
+
+.select-container {
+    margin-bottom: 15px;
+}
+
+.date-time-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.date-input,
+.time-input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.address-input {
+    margin-bottom: 15px;
+}
+
+.pedido-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    width: 20%;
+    padding: 10px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 auto; 
+    display: block; 
+    margin-bottom: 3%;
+}
+
+/* ========================================================================== */
+/* Estilos responsivos */
+/* ========================================================================== */
+@media screen and (max-width: 768px) {
+    .date-time-inputs {
+        flex-direction: column;
+    }
+
+    .date-input,
+    .time-input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .select-container {
+        width: 100%;
+    }
+}
