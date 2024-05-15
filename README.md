@@ -38,7 +38,9 @@ En esta sección compartimos la historia detrás de Candy Kao y nuestro compromi
 
 ## Deploy
 
-Este sitio web ha sido deployado en [Visita la web dedsde aca](https://candykao.netlify.app/), lo que garantiza una disponibilidad y velocidad óptimas para nuestros usuarios.
+Este sitio web ha sido deployado en Netlify, lo que garantiza una disponibilidad y velocidad óptimas para nuestros usuarios.
 
 ¡Gracias por visitar Candy Kao! Esperamos que disfrutes explorando nuestra tienda en línea.
+
+## [Click para visitar la web](https://candykao.netlify.app/)
 
